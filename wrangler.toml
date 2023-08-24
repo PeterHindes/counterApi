@@ -1,4 +1,4 @@
-name = "counterApi"
+name = "counter-api"
 main = "src/worker.js"
 compatibility_date = "2023-08-21"
 
@@ -10,9 +10,10 @@ compatibility_date = "2023-08-21"
 
 # Bind a KV Namespace. Use KV as persistent storage for small key-value pairs.
 # Docs: https://developers.cloudflare.com/workers/runtime-apis/kv
-# [[kv_namespaces]]
-# binding = "MY_KV_NAMESPACE"
-# id = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+[[kv_namespaces]]
+binding = "counterApi"
+id = "f19748f773904b718f0925f2a945bd78"
+preview_id = "f19748f773904b718f0925f2a945bd78"
 
 # Bind an R2 Bucket. Use R2 to store arbitrarily large blobs of data, such as files.
 # Docs: https://developers.cloudflare.com/r2/api/workers/workers-api-usage/
